@@ -8,13 +8,13 @@
 
 int main()
 {
-    Display display(800, 800, "Hello World!");
+    Display display(800, 800, "OpenGL Test!");
 
     Vertex verticies[] =
         {
-            Vertex(glm::vec3(-0.5, -0.5, 0), glm::vec2(0.0, 0.0)),
-            Vertex(glm::vec3(0.0, 0.5, 0.0), glm::vec2(0.5, 1.0)),
-            Vertex(glm::vec3(0.5, -0.5, 0.0), glm::vec2(1.0, 0.0)),
+            Vertex{glm::vec3(-0.2, -0.5, 0), glm::vec2(0.0, 0.0)},
+            Vertex{glm::vec3(0.0, 0.0, 0.0), glm::vec2(0.5, 1.0)},
+            Vertex{glm::vec3(0.5, -0.5, 0.0), glm::vec2(1.0, 0.0)},
         };
 
     Mesh mesh(verticies, sizeof(verticies)/sizeof(verticies[0]));
